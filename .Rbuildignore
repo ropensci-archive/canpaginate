@@ -1,0 +1,8 @@
+^CODE_OF_CONDUCT\.md$
+README.Rmd
+.travis.yml
+cran-comments.md
+man-roxygen
+appveyor.yml
+.github
+appveyor.yml

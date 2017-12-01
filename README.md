@@ -8,7 +8,7 @@ canpaginate
 
 `canpaginate` helps you paginate with REST APIs
 
-(p.s. named inspired from Ruby's [will_paginate](https://github.com/mislav/will_paginate/))
+(p.s. named inspired from Ruby's [will_paginate](https://github.com/mislav/will_paginate/), though this pkgs focus is slightly diff. from that of `will_paginate`)
 
 ## install
 

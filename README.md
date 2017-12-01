@@ -10,6 +10,12 @@ canpaginate
 
 (p.s. named inspired from Ruby's [will_paginate](https://github.com/mislav/will_paginate/), though this pkgs focus is slightly diff. from that of `will_paginate`)
 
+Why? The problems:
+
+- REST APIs are super variable in how they do pagination. There's no one way to do it. In my experience most nearly all APIs expect users to paginate via query parameters, while some APIS return pagination information in their body and others in their response headers. 
+- For query parameters, some have a pair (one for how many records, another for what record to start at - but the names for these parameters are all over the place), while others have a single parameter for number of records, and others use a cursor format for continuing to next page.
+- On the user side, a very common pain point is "paging" through an API. That is, say you want 100 records, while the API only returns 10 per request. Thus, you need to make 10 requests of 10 records each. Those familiar with APIs can sort this problem out easily, but most people are not going to be able to do it easily. 
+
 ## install
 
 
